@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <form method="POST" action="/result">
+      <fieldset>
+        <legend>Data:</legend>
+        <label for="id">ID:</label><br>
+        <input type="text" name="id" id="id"><br>
+        <label for="firstname">First name:</label><br>
+        <input type="text" name="firstname" id="firstname"><br>
+        <label for="lastname">Last name:</label><br>
+        <input type="text" name="lastname" id="lastname"><br>
+        <label for="email">Email:</label><br>
+        <input type="text" name="email" id="email"><br>
+        <label for="gender">Gender:</label><br>
+        <input list="gender" name="gender"><br>
+        <datalist id="gender">
+          <option value="male">
+          <option value="female">
+          <option value="alien">
+        </datalist>
+        <label for="ipaddress">IP Adress:</label><br>
+        <input type="text" name="ipaddress" id="ipaddress"><br><br>
+        <button type="submit">Send</button>
+      </fieldset>
+    </form>
+  </body>
+</html>
